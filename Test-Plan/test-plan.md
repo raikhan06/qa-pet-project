@@ -1,97 +1,172 @@
-# Тест План 
+# Test Plan
 
-## 1. ИДЕНТИФИКАЦИЯ ТЕСТ-ПЛАНА
-Идентификатор: [TP-ProjectName-YYYY-MM-VX.Y]
-Версия: [X.Y]
-Дата создания: [ДД.ММ.ГГГГ]
-Дата последнего обновления: [ДД.ММ.ГГГГ]
+## Project: SauceDemo Testing  
 
-## 2. ВВЕДЕНИЕ
-[Краткое описание тестируемой системы или приложения, контекст проекта]
+Author: Tazhibaeva Raikhan 
+Version: 1.0  
+Date: 29 May 2026
 
-## 3. ССЫЛКИ НА ДОКУМЕНТЫ
-- [Ссылка на документацию требований]
-- [Ссылка на спецификации]
-- [Ссылка на проектную документацию]
-- [Другие релевантные документы]
 
-## 4. ОБЪЕМ ТЕСТИРОВАНИЯ
-### 4.1 В область тестирования входит:
-- [Перечислите все компоненты/функции, которые будут тестироваться]
+# 1. Objective
 
-### 4.2 В область тестирования не входит:
-- [Перечислите все, что осознанно исключается из тестирования]
+The purpose of testing is to verify the main functionality of the SauceDemo website and ensure that the application works correctly for end users.
+Main areas of testing include:
+- Login functionality
+- Product catalog
+- Shopping cart
+- Checkout process
+- Logout functionality
 
-## 5. ОБЪЕКТЫ И ФУНКЦИИ ТЕСТИРОВАНИЯ
-### 5.1 Объекты тестирования:
-- [Список конкретных модулей, компонентов, интерфейсов]
 
-### 5.2 Функции для тестирования:
-- [Детальное описание функциональности, подлежащей тестированию]
+# 2. Scope of Testing
 
-## 6. ПОДХОД К ТЕСТИРОВАНИЮ
-### 6.1 Типы тестирования:
-- [Функциональное, производительности, безопасности и т.д.]
+## Features to be tested
 
-### 6.2 Уровни тестирования:
-- [Модульное, интеграционное, системное, приемочное]
+- Login functionality
+- Product catalog page
+- Add/remove products from cart
+- Shopping cart functionality
+- Checkout process
+- Logout functionality
+- Error message validation
+- Basic UI verification
 
-### 6.3 Методы тестирования:
-- [Черный ящик, белый ящик, исследовательское и т.д.]
+## Features not to be tested
 
-### 6.4 Инструменты:
-- [Список инструментов и технологий, которые будут использоваться]
+- Performance testing
+- Security testing
+- Mobile responsiveness
+- Payment gateway integration
+- API testing
 
-## 7. КРИТЕРИИ ТЕСТИРОВАНИЯ
-### 7.1 Критерии прохождения/непрохождения тестов:
-- [Четкие, измеримые критерии успешности]
 
-### 7.2 Критерии приостановки:
-- [Условия, при которых тестирование должно быть приостановлено]
+# 3. Test Approach and Strategy 
 
-### 7.3 Критерии возобновления:
-- [Условия, при которых тестирование может быть возобновлено]
+Testing will be performed manually using prepared test cases and checklists.
+The following testing types will be used:
+- Functional Testing
+- UI Testing
+- Positive Testing
+- Negative Testing
+- Regression Testing
+- End-to-End Testing
 
-### 7.4 Критерии завершения:
-- [Когда тестирование считается завершенным]
+The main focus areas include:
+- Verification of core business functionality
+- Validation of positive and negative scenarios
+- UI consistency checks
+- Verification of error messages
+- End-to-end user flow testing
 
-## 8. РЕЗУЛЬТАТЫ ТЕСТИРОВАНИЯ
-[Описание артефактов, которые будут созданы в процессе тестирования]
+Testing will be executed using Google Chrome browser on Windows 10.
 
-## 9. ЗАДАЧИ ТЕСТИРОВАНИЯ
-[Список конкретных задач, которые нужно выполнить]
+# 4. Test Environment
 
-## 10. ТРЕБОВАНИЯ К ОКРУЖЕНИЮ
-### 10.1 Аппаратное обеспечение:
-- [Требования к серверам, ПК, мобильным устройствам]
+| Parameter | Value |
+|---|---|
+| Website | https://www.saucedemo.com |
+| Browser | Google Chrome |
+| OS | Windows 10 |
+| Tool for documentation | VS Code |
+| Repository | GitHub |
 
-### 10.2 Программное обеспечение:
-- [ОС, СУБД, браузеры, другое ПО]
 
-### 10.3 Тестовые данные:
-- [Требования к данным, которые будут использоваться]
+# 5. Test Data
 
-## 11. ОБЯЗАННОСТИ И РОЛИ
-[Перечень ролей и ответственностей команды тестирования]
+## Valid user
+Username: standard_user
+Password: secret_sauce
 
-## 12. ТРЕБОВАНИЯ К ПЕРСОНАЛУ И ОБУЧЕНИЮ
-[Необходимые навыки и любые требования к обучению]
+## Invalid user examples
+- locked_out_user
+- Invalid password
+- Empty fields
 
-## 13. РАСПИСАНИЕ
-[Временные рамки, ключевые вехи и сроки]
 
-## 14. АНАЛИЗ РИСКОВ
-| Риск | Вероятность | Влияние | Стратегия смягчения |
-|------|------------|---------|---------------------|
-| [Риск 1] | [Высокая/Средняя/Низкая] | [Высокое/Среднее/Низкое] | [Стратегия] |
-| [Риск 2] | [Высокая/Средняя/Низкая] | [Высокое/Среднее/Низкое] | [Стратегия] |
+# 6. Entry Criteria
 
-## 15. НЕПРЕДВИДЕННЫЕ ОБСТОЯТЕЛЬСТВА
-[План действий при реализации рисков]
+Testing will start after:
+- The website becomes available
+- The test cases and checklists are prepared
+- Test environment is ready
 
-## 16. УТВЕРЖДЕНИЯ
-| Роль | Имя | Подпись | Дата |
-|------|-----|---------|------|
-| Менеджер проекта | | | |
-| QA Lead | | | |
-| Технический руководитель | | | |
+
+# 7. Exit Criteria
+
+Testing will be considered complete after:
+- All test cases are executed
+- All discovered defects are reported
+- Bug reports are prepared
+- Test results are documented
+
+
+# 8. Deliverables
+
+The following documents will be created during testing:
+- Test Plan
+- Checklists
+- Test Cases
+- Bug Reports
+- Screenshots
+- Test Summary Report
+
+
+# 9. Roles and Responsibilities
+
+| Role | Responsibility |
+|---|---|
+| QA Engineer | Test planning, test execution, bug reporting |
+| Developer | Bug fixing |
+| Project Owner | Requirement clarification |
+
+
+# 10. Bug Severity Levels
+
+| Severity | Description |
+|---|---|
+| Critical | Application crash or inability to continue testing |
+| Major | Main functionality does not work |
+| Minor | Small UI or functional issue |
+| Trivial | Cosmetic issue |
+
+
+# 11. Bug Priority Levels
+
+| Priority | Description |
+|---|---|
+| High | Requires immediate fix |
+| Medium | Should be fixed soon |
+| Low | Can be fixed later |
+
+
+# 12. Suspension Criteria
+
+Testing may be suspended if:
+- The website becomes unavailable
+- Critical defects block further testing
+- Test environment issues occur
+
+
+# 13. Assumptions and Dependencies
+
+- Stable internet connection is available
+- Test website is accessible
+- Valid test credentials are provided
+- Browser is updated to the latest version
+
+
+# 14. Risks
+
+Possible risks include:
+- Changes in the test website
+- Unstable internet connection
+- Limited test environment
+- Unexpected website behavior during testing
+
+
+
+# 17. Conclusion
+
+Testing will help evaluate the stability, usability, and correctness of the main functionality of the SauceDemo website. 
+
+The testing process will also help identify defects and improve the overall quality of the application.
