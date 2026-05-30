@@ -24,6 +24,7 @@ Main areas of testing include:
 
 - Login functionality
 - Product catalog page
+- Sorting priducts
 - Add/remove products from cart
 - Shopping cart functionality
 - Checkout process
