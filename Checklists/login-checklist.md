@@ -2,7 +2,7 @@
 
 ## Positive Scenarios 
 
-- Verify login with valid credentials (standart_user)
+- Verify login with valid credentials (standard_user)
 - Verify successful redirection to Products page after login 
 
 ## Negative Scenarios 

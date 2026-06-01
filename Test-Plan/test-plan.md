@@ -75,11 +75,38 @@ Testing will be executed using Google Chrome browser on Windows 10.
 # 5. Test Data
 
 ## Valid user
-Username: standard_user
-Password: secret_sauce
 
-## Invalid user examples
-- locked_out_user
+- Username: standard_user
+- Password: secret_sauce
+
+## Locket user (negative login)
+
+- Username: locked_out_user
+- Password: secret_sauce
+
+## Problem user (UI/functional issues )
+
+- Username: problem_user
+- Password: secret_sauce
+
+## Performance user (slow response simulation )
+
+- Username: performance_glitch_user
+- Password: secret_sauce
+
+## Error user (unstable behavior )
+
+- Username: error_user
+- Password: secret_sauce
+
+## Visual user (UI rendering issues )
+
+- Username: visual_user
+- Password: secret_sauce
+
+## Invalid inputs
+
+- Invalid username
 - Invalid password
 - Empty fields
 
