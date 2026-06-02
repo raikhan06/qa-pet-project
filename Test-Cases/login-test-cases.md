@@ -48,11 +48,11 @@ Pass / Fail
 
 ## TC_LOGIN_02: Login with Invalid Username
 
-## Module
+### Module
 
 Login
 
-## Priority
+### Priority
 
 High
 
@@ -71,7 +71,7 @@ High
 | ---- | ------------------------------------------ | -------------------------------- |
 | 1    | Open https://www.saucedemo.com             | Login page is displayed          |
 | 2    | Enter "invalid_user" in the Username field | Username is entered successfully |
-| 3    | Enter "secret_sauce" in the Password field | Password is entered successfully |
+| 3    | Enter "secret_sauce" in the Password field | Password is entered successfully and masked |
 | 4    | Click the Login button                     | Login request is submitted       |
 | 5    | Observe the result                         | User remains on the Login page   |
 | 6    | Verify error message                       | Error message is displayed       |
@@ -119,7 +119,7 @@ High
 | ---- | ---------------------------------------------- | -------------------------------- |
 | 1    | Open https://www.saucedemo.com                 | Login page is displayed          |
 | 2    | Enter "standard_user" in the Username field    | Username is entered successfully |
-| 3    | Enter "invalid_password" in the Password field | Password is entered successfully |
+| 3    | Enter "invalid_password" in the Password field | Password is entered successfully and masked |
 | 4    | Click the Login button                         | Login request is submitted       |
 | 5    | Observe the result                             | User remains on the Login page   |
 | 6    | Verify error message                           | Error message is displayed       |
@@ -163,7 +163,7 @@ High
 
 | Step | Action                 | Expected Result                  |
 | ---- | ---------------------- | -------------------------------- |
-| 1    | Open SauceDemo website | Login page is displayed          |
+| 1    | Open https://www.saucedemo.com  | Login page is displayed          |
 | 2    | Enter "invalid_user" in the Username field | Username is entered successfully |
 | 3    | Enter "invalid_password" in the Password field | Password is entered successfully |
 | 4    | Click Login button     | Login request is submitted       |
@@ -209,12 +209,12 @@ High
 
 | Step | Action                     | Expected Result                              |
 | ---- | -------------------------- | -------------------------------------------- |
-| 1    | Open SauceDemo website     | Login page is displayed                      |
+| 1    | Open https://www.saucedemo.com      | Login page is displayed                      |
 | 2    | Leave Username field empty | Username field remains empty                 |
-| 3    | Enter valid password in the Password field  | Password is entered successfully             |
+| 3    | Enter valid password in the Password field  | Password is entered successfully and masked             |
 | 4    | Click Login button         | Login request is submitted                   |
 | 5    | Verify result              | User remains on Login page                   |
-| 6    | Verify error message       | Username required error message is displayed |
+| 6    | Verify error message       | Epic sadface: Username is required |
 
 ### Expected Result
 
@@ -255,12 +255,12 @@ High
 
 | Step | Action                     | Expected Result                              |
 | ---- | -------------------------- | -------------------------------------------- |
-| 1    | Open SauceDemo website     | Login page is displayed                      |
+| 1    | Open https://www.saucedemo.com      | Login page is displayed                      |
 | 2    | Enter valid username in the Username field   | Username is entered successfully             |
 | 3    | Leave Password field empty | Password field remains empty                 |
 | 4    | Click Login button         | Login request is submitted                   |
 | 5    | Verify result              | User remains on Login page                   |
-| 6    | Verify error message       | Password required error message is displayed |
+| 6    | Verify error message       | Epic sadface: Password is required |
 
 ### Expected Result
 
@@ -301,7 +301,7 @@ High
 
 | Step | Action                     | Expected Result                              |
 | ---- | -------------------------- | -------------------------------------------- |
-| 1    | Open SauceDemo website     | Login page is displayed                      |
+| 1    | Open https://www.saucedemo.com      | Login page is displayed                      |
 | 2    | Leave Username field empty | Username field remains empty                 |
 | 3    | Leave Password field empty | Password field remains empty                 |
 | 4    | Click Login button         | Login request is submitted                   |
@@ -312,7 +312,7 @@ High
 
 - Login is not successful
 - User remains on the Login page
-- Required field error message is displayed
+- Username required error message is displayed
 
 ### Actual Result
 
@@ -347,18 +347,18 @@ High
 
 | Step | Action                  | Expected Result                            |
 | ---- | ----------------------- | ------------------------------------------ |
-| 1    | Open SauceDemo website  | Login page is displayed                    |
+| 1    | Open https://www.saucedemo.com   | Login page is displayed                    |
 | 2    | Enter "locked_out_user" in the Username field | Username is entered successfully           |
-| 3    | Enter "secret_sauce" in the Password field     | Password is entered successfully           |
+| 3    | Enter "secret_sauce" in the Password field     | Password is entered successfully         |
 | 4    | Click Login button      | Login request is submitted                 |
-| 5    | Verify result           | User remains on Login page                 |
-| 6    | Verify error message    | Locked out user error message is displayed |
+| 5    | Observe the page after login attempt        | User remains on Login page                 |
+| 6    | Observe the displayed error message    | Locked out user error message is displayed |
 
 ### Expected Result
 
 - Login is not successful
 - User remains on the Login page
-- Locked out user error message is displayed
+- Error message indicating the user is locked out is displayed
 
 ### Actual Result
 
@@ -388,15 +388,15 @@ Medium
 
 | Step | Action                     | Expected Result                  |
 | ---- | -------------------------- | -------------------------------- |
-| 1    | Open SauceDemo website     | Login page is displayed          |
+| 1    | Open https://www.saucedemo.com      | Login page is displayed          |
 | 2    | Click Password field       | Cursor appears in Password field |
-| 3    | Enter any password         | Password is entered              |
+| 3    | Enter "secret_sauce" in the Password field   | Password is entered              |
 | 4    | Observe entered characters | Characters are masked            |
 
 ### Expected Result
 
 - Password characters are not visible
-- Password field masks all entered characters
+- Entered password is not visible in plain text
 
 ### Actual Result
 
@@ -406,48 +406,3 @@ To be filled during test execution
 
 Pass / Fail
 
----
-
-## TC_LOGIN_10: Error Message After Multiple Failed Login Attempts
-
-### Module
-
-Login
-
-### Priority
-
-Medium
-
-### Preconditions
-
-- User is on the SauceDemo login page.
-
-### Test Data
-
-- Username: invalid_user
-- Password: invalid_password
-
-### Steps
-
-| Step | Action                           | Expected Result                            |
-| ---- | -------------------------------- | ------------------------------------------ |
-| 1    | Enter invalid credentials        | Credentials are entered                    |
-| 2    | Click Login button               | Error message is displayed                 |
-| 3    | Repeat login attempt three times | Login continues to fail                    |
-| 4    | Observe error message            | Error message remains visible and readable |
-| 5    | Verify page behavior             | Login page functions normally              |
-
-### Expected Result
-
-- Consistent error message is displayed after each failed attempt.
-- Login page remains functional
-- No unexpected behavior occurs
-
-### Actual Result
-
-To be filled during test execution
-
-### Status
-
-Pass / Fail
----
