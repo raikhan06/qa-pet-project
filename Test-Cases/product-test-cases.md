@@ -13,7 +13,7 @@ High
 ### Preconditions
 
 - User is on the SauceDemo login page
-- User is on the Products page
+- Valid test credentials are available
 
 ### Test Data
 
@@ -66,13 +66,13 @@ High
 
 | Step | Action                                     | Expected Result                  |
 | ---- | ------------------------------------------ | -------------------------------- |
-| 1    | Obseve product cards on Products page         | Product cards are displayed         |
-| 2    | Observe the product list | Product items are displayed |
-| 3    | Verify product names | PProduct names are displayed |
-| 4    | Verify product descriptions     | Product descriptions are displayed      |
-| 5    | Verify product prices             | Product prices are displayed   |
+| 1    | Observe product cards on Products page         | Product cards are displayed         |
+| 2    | Observe the product list | Product items are displayed correctly  |
+| 3    | Verify product names    | Product names are displayed correctly |
+| 4    | Verify product descriptions     | Product descriptions are displayed  correctly     |
+| 5    | Verify product prices             | Product prices are displayed correctly   |
 | 6    | Verify product images             | Product images are displayed correctly       |
-| 7    | Verify Add to Cart button         | Add to Cart button is displayed        |
+| 7    | Verify Add to Cart button         | Add to Cart button is displayed  correctly       |
 
 ### Expected Result
 
@@ -91,7 +91,7 @@ Pass / Fail
 ---
 
 
-## TC_Product_03: Verify Add to Cart Functionality
+## TC_PRODUCT_03: Verify Add to Cart Functionality
 
 ### Module 
 
@@ -114,7 +114,7 @@ High
 | 1    | Locate any product             | Product is displayed            |
 | 2    | Click the Add to Cart button | Product is added to cart        |
 | 3    | Observe the button             | Button text changes to Remove |
-| 4    | Verify cart badge              | Cart badge displays value 1   |
+| 4    | Verify cart badge              | Cart badge count increases by 1   |
 
 ### Expected Result
 
@@ -154,7 +154,7 @@ High
 | 1    | Locate added product      | Remove button is displayed           |
 | 2    | Click the Remove button | Product is removed from cart         |
 | 3    | Observe the button        | Button text changes to Add to Cart |
-| 4    | Verify cart badge         | Cart badge count decreases           |
+| 4    | Verify cart badge         | Cart badge count decreases by 1          |
 
 ### Expected Result
 
@@ -210,7 +210,7 @@ Pass / Fail
 
 ---
 
-## TC_Product_06: Verify Product Sorting Z to A
+## TC_PRODUCT_06: Verify Product Sorting Z to A
 
 
 ### Module
@@ -249,7 +249,7 @@ Pass / Fail
 
 ---
 
-## TC_Product_07: Verify Product Sorting by Price Low to High
+## TC_PRODUCT_07: Verify Product Sorting by Price Low to High
 
 ### Module
 
@@ -286,7 +286,7 @@ Pass / Fail
 ---
 
 
-## TC_Product_08: Verify Product Sorting by Price High to Low
+## TC_PRODUCT_08: Verify Product Sorting by Price High to Low
 
 ### Module
 
@@ -323,14 +323,14 @@ Pass / Fail
 
 ---
 
-## TC_PRODUT_09: Verify Multiple Products Can Be Added to Cart
+## TC_PRODUCT_09: Verify Multiple Products Can Be Added to Cart
 ### Module
 
 Products
 
 ### Priority
 
-Medium
+High
 
 ### Preconditions
 
@@ -363,3 +363,46 @@ To be filled during test execution
 
 Pass / Fail
 
+---
+
+## TC_PRODUCT_10: Verify Product Details Page Opens
+### Module
+
+Products
+
+### Priority
+
+High
+
+### Preconditions
+
+- User is logged in
+- Products page is open
+
+### Steps
+
+| Step | Action                    | Expected Result                      |
+| ---- | ------------------------- | ------------------------------------ |
+| 1    | Locate any product on the Products page  | Product is displayed   |
+| 2    | Click the product name       | Product details page is opened             |
+| 3    | Observe the product details page | Product information is displayed   |
+| 4    | Verify product name    | Product name is displayed correctly |
+| 5    | Verify product description     | Product description is displayed correctly     |
+| 6    | Verify product price             | Product price is displayed correctly  |
+| 7    | Verify product image             | Product image is displayed correctly       |
+| 8    | Verify Add to Cart button         | Add to Cart button is displayed correctly  |
+| 9    | Click Back to Products button          | User is returned to the Products page   |
+
+### Expected Result
+
+- Product details page opens successfully
+- Product informaton is displayed correctly
+- Product name, description, price and image are visible
+
+### Actual Result
+
+To be filled during test execution
+
+### Status
+
+Pass / Fail

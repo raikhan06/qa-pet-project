@@ -260,7 +260,7 @@ High
 | 3    | Leave Password field empty | Password field remains empty                 |
 | 4    | Click Login button         | Login request is submitted                   |
 | 5    | Verify result              | User remains on Login page                   |
-| 6    | Verify error message       | Epic sadface: Password is required |
+| 6    | Verify error message       | Password required error message is displayed |
 
 ### Expected Result
 
@@ -349,7 +349,7 @@ High
 | ---- | ----------------------- | ------------------------------------------ |
 | 1    | Open https://www.saucedemo.com   | Login page is displayed                    |
 | 2    | Enter "locked_out_user" in the Username field | Username is entered successfully           |
-| 3    | Enter "secret_sauce" in the Password field     | Password is entered successfully         |
+| 3    | Enter "secret_sauce" in the Password field     | Password is entered successfully and masked       |
 | 4    | Click Login button      | Login request is submitted                 |
 | 5    | Observe the page after login attempt        | User remains on Login page                 |
 | 6    | Observe the displayed error message    | Locked out user error message is displayed |
