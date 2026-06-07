@@ -91,7 +91,7 @@ Pass / Fail
 ---
 
 
-## TC_PRODUCT_03: Verify Add to Cart Functionality
+## TC_PRODUCT_03: Verify Add to Cart Button Functionality
 
 ### Module 
 
