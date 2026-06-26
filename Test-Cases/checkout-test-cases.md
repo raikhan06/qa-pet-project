@@ -35,7 +35,7 @@ High
 
 ### Actual Result
 
-To be filled during test execution.
+To be filled during test execution
 
 ### Status
 
@@ -79,7 +79,7 @@ High
 
 ### Actual Result
 
-To be filled during test execution.
+To be filled during test execution
 
 ### Status
 
@@ -109,16 +109,16 @@ High
 | 2    | Enter valid Last Name        | Value is entered                              |
 | 3    | Enter valid Postal Code      | Value is entered                              |
 | 4    | Click Continue button        | Validation is triggered                       |
-| 5    | Verify error message         | "First Name is required" message is displayed |
+| 5    | Verify error message         | "Error: First Name is required" message is displayed |
 
 ### Expected Result
 
 - User remains on Checkout Information page
-- Error message "First Name is required" is displayed
+- Error message "Error: First Name is required" is displayed
 
 ### Actual Result
 
-To be filled during test execution.
+To be filled during test execution
 
 ### Status
 
@@ -148,17 +148,17 @@ High
 | 2    | Leave Last Name field empty | Field remains empty                          |
 | 3    | Enter valid Postal Code     | Value is entered                             |
 | 4    | Click Continue button       | Validation is triggered                      |
-| 5    | Verify error message        | "Last Name is required" message is displayed |
+| 5    | Verify error message        | "Error: Last Name is required" message is displayed |
 
 ### Expected Result
 
 - User remains on Checkout Information page
-- Error message "Last Name is required" is displayed
+- Error message "Error: Last Name is required" is displayed
 
 
 ### Actual Result
 
-To be filled during test execution.
+To be filled during test execution
 
 ### Status
 
@@ -188,16 +188,16 @@ High
 | 2    | Enter valid Last Name         | Value is entered                               |
 | 3    | Leave Postal Code field empty | Field remains empty                            |
 | 4    | Click Continue button         | Validation is triggered                        |
-| 5    | Verify error message          | "Postal Code is required" message is displayed |
+| 5    | Verify error message          | "Error: Postal Code is required" message is displayed |
 
 ### Expected Result
 
 - User remains on Checkout Information page
-- Error message "Postal Code is required" is displayed
+- Error message "Error: Postal Code is required" is displayed
 
 ### Actual Result
 
-To be filled during test execution.
+To be filled during test execution
 
 ### Status
 
@@ -309,7 +309,7 @@ High
 
 ### Actual Result
 
-To be filled during test execution.
+To be filled during test execution
 
 ### Status
 
@@ -347,7 +347,7 @@ High
 
 ### Actual Result
 
-To be filled during test execution.
+To be filled during test execution
 
 ### Status
 
@@ -384,7 +384,7 @@ High
 
 ### Actual Result
 
-To be filled during test execution.
+To be filled during test execution
 
 ### Status
 
@@ -420,7 +420,7 @@ High
 
 ### Actual Result
 
-To be filled during test execution.
+To be filled during test execution
 
 ### Status
 
@@ -461,7 +461,7 @@ High
 
 ### Actual Result
 
-To be filled during test execution.
+To be filled during test execution
 
 ### Status
 
@@ -497,7 +497,7 @@ Medium
 
 ### Actual Result
 
-To be filled during test execution.
+To be filled during test execution
 
 ### Status
 
@@ -517,7 +517,6 @@ Medium
 
 ### Preconditions
 
-- User is logged in successfully
 - At least one product has been added to the cart
 - Checkout Information form has been completed successfully
 - User is on the Checkout Overview page
@@ -533,13 +532,14 @@ Medium
 | 5    | Verify URL                        | URL contains “/inventory.html”     |
 
 ### Expected Result
+
 - User is redirected to the Products page
 - Products page is displayed successfully
 - Correct URL is displayed
 
 ### Actual Result
 
-To be filled during test execution.
+To be filled during test execution
 
 ### Status
 
@@ -559,7 +559,6 @@ Medium
 
 ### Preconditions
 
-- User is logged in successfully
 - At least one product has been added to the cart
 - User is on the Checkout Information page
 
@@ -577,21 +576,21 @@ Medium
 | 2    | Enter "Smith" in the Last Name field | Value is entered successfully                  |
 | 3    | Leave the Postal Code field empty    | Postal Code field remains empty                |
 | 4    | Click the Continue button            | Validation is triggered                        |
-| 5    | Verify error message                 | "Postal Code is required" message is displayed |
+| 5    | Verify error message                 | "Error: Postal Code is required" message is displayed |
 | 6    | Verify First Name field value        | Previously entered value is retained           |
 | 7    | Verify Last Name field value         | Previously entered value is retained           |
 | 8    | Verify Postal Code field value       | Field remains empty                            |
 
 ### Expected Result
 
-- Validation error is displayed for the empty Postal Code field.
-- User remains on the Checkout Information page.
-- Previously entered First Name and Last Name values are preserved.
-- User does not need to re-enter valid information.
+- Validation error is displayed for the empty Postal Code field
+- User remains on the Checkout Information page
+- Previously entered First Name and Last Name values are preserved
+- User does not need to re-enter valid information
 
 ### Actual Result
 
-To be filled during test execution.
+To be filled during test execution
 
 ### Status
 
